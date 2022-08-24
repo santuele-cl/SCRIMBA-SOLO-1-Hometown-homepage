@@ -1,0 +1,173 @@
+:root {
+    --RED: #E63946;
+    --LIGHT: #F1FAEE;
+    --LIGHT-BLUE: #A8DADC;
+    --DARK-BLUE: #457B9D;
+    --DARKER-BLUE: #1D3557;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* 
+////////////////////
+    HERO SECTION
+///////////////////
+*/
+
+.hero-section {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 1.3125rem;
+
+    padding-left: 6rem;
+
+    background-image: url("https://images.unsplash.com/photo-1580465446156-0a5b3eee11ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+    background-size: cover;
+}
+
+.title  {
+    width: 80%;
+    max-width: 720px;
+    
+    color: var(--LIGHT);
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 10px black;
+    text-align: left;
+    margin: 0;
+
+    font-size: 4rem;
+    font-weight: bold;
+
+    border-radius: 10px;
+}
+
+.subtitle {
+    width: 65%;
+    max-width: 720px;
+
+    color: var(--LIGHT);
+    background-color: var(--DARK-BLUE);
+
+    font-size: 1.1rem;
+    font-weight: normal;
+
+    text-shadow: 0px 0px 2px rgb(47, 47, 47);
+    line-height: 1.2;
+
+    padding: 0.8em 1.5em;
+    border-radius: 10px;
+
+    
+}
+
+/* 
+///////////////////////////
+    ACTIVITIES SECTION
+//////////////////////////
+*/
+
+.section-activities {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+
+    color: var(--DARKER-BLUE);
+    padding: 5rem 3rem;
+}
+
+.act-box {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 1.6rem;
+}
+
+.act-img {
+    width: 140px;
+    height: 140px;
+
+    border-radius: 50%;
+}
+
+
+/* 
+///////////////////////
+    GUIDE SECTION
+///////////////////////
+*/
+
+.section-guide {
+    min-width: 480px;
+    max-width: 900px;
+    width: 50%;
+    margin: 0 auto 4rem;
+    padding: 3rem 1.5rem;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+
+    color: var(--DARKER-BLUE);
+    background-color: var(--LIGHT-BLUE);    
+    border-radius: 20px;
+    border-bottom: 8px solid var(--DARKER-BLUE);
+
+}
+
+.guide-img {
+    width: 45%;
+    border-radius: 20px;
+}
+
+.guide-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1em;
+}
+
+.guide-title {
+    font-size: 1.5rem;
+}
+
+.guide-info {
+    font-style: italic;
+}
+
+/* 
+///////////////////////
+    FOOTER SECTION
+///////////////////////
+*/
+
+.footer {
+    padding: 1rem 0;
+    font-style: italic;
+}
+
+
+
